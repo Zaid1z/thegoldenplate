@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%),url(images/background.jpg);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header .logo h1 {
+    font-size: 2em;
+    color: hsl(55, 100%, 55%);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #d8f863;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: hsl(55, 100%, 55%);
+}
+
+.hero {
+    background: url('restaurant-hero.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background-color:hsla(56, 100%, 48%, 0.884);
+    padding: 15px 30px;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color:hsl(55, 100%, 55%);
+}
+
+.about {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.menu {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.menu h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color:hsl(0, 0%, 100%);
+}
+
+.menu-category {
+    margin-bottom: 40px;
+}
+
+.menu-category h3 {
+    color: hsl(55, 100%, 45%);
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #acacac;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.menu-description {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.menu-description h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.menu-description p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.2em;
+    color: hsl(34, 100%, 32%);
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+footer a {
+    color: #e74c3c;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* About Page Styles */
+
+.about {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 100%);
+}
+
+.about p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    color:hsl(0, 0%, 100%);
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.team-member {
+    text-align: center;
+    width: 200px;
+}
+
+.team-member img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-member h4 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color:hsl(71, 98%, 47%);
+}
+
+.team-member p {
+    font-size: 1em;
+    color: white;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+footer a {
+    color: #e74c3c;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* Contact Page Styles */
+
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: wheat
+}
+
+.contact p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: hsl(0, 0%, 100%);
+}
+
+.contact-form {
+    display: grid;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.contact-form label {
+    font-size: 1.1em;
+    color:hsl(0, 0%, 100%);
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.contact-form button {
+    background-color: #a19100;
+    color: white;
+    padding: 15px;
+    font-size: 1.1em;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #aec200;
+}
+
+.contact-info {
+    margin-top: 500px;
+    padding: 50px 20px;
+    text-align: center;
+    max-width: 400px;
+    max-height: 600px;
+    margin: 0 auto;
+}
+.contact-info h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 100%);
+}
+
+.contact-info table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+.contact-info table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.contact-info table tr th {
+    padding: 15px;
+    font-size: 1.1em;
+    color: hsl(0, 0%, 100%);
+    background-color: #4e4d4d;
+    text-align: left;
+    border: 1px solid;
+}
+.contact-info table tr td{
+    padding: 15px;
+    font-size: 1.1em;
+    color: hsl(0, 0%, 100%);
+    border : 1px solid;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+footer a {
+    color: #e74c3c;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .logo h1 {
+        font-size: 1.8em;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .menu-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .menu-description {
+        text-align: center;
+        padding-left: 0;
+    }
+}
